@@ -43,6 +43,7 @@
    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
    <meta name="msapplication-TileColor" content="#da532c">
    <meta name="theme-color" content="#ffffff">
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
    <!-- Google tag (gtag.js) -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LMNRLTPJ2L"></script>
@@ -208,22 +209,82 @@
    <meta name="twitter:image" content="https://www.goodvibesbranding.com/index.html">
 
    <style>
-      .wider-column {
-         width: 100% !important;
+      .card-title {
+         color: #A00D93;
       }
 
-      @media (min-width: 992px) and (max-width: 1199px) {
-         .wider-column {
-            width: 80% !important;
+      .btn-primary {
+         background-color: #A00D93;
+         border-color: #A00D93;
+      }
+
+      .btn-primary:hover {
+         background-color: #8A0B7E;
+         border-color: #8A0B7E;
+      }
+
+      .section-heading {
+         color: #A00D93;
+         text-align: center;
+         margin-bottom: 2rem;
+      }
+
+      .about-section {
+         display: flex;
+         flex-direction: row;
+         gap: 40px;
+         padding: 30px;
+      }
+
+      /* .about-section .img img {
+         max-width: 100%;
+         height: auto;
+      } */
+
+      .about-section .content {
+         display: flex;
+         flex-direction: column;
+         text-align: left;
+      }
+
+      .about-section .bd-services-2__item-btn {
+         margin-top: 20px;
+      }
+
+      .bd-services-2__icon img {
+         width: 60px;
+         height: 60px;
+         object-fit: contain;
+
+      }
+
+      @media (max-width: 768px) {
+         .about-section {
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
          }
-      }
 
-      @media (min-width: 1200px) {
-
-         .wider-column {
-            width: 90% !important;
+         .about-section .content {
+            text-align: center;
          }
+
+         .about-section h2 {
+            font-size: 1.5rem;
+         }
+
+         .about-section p {
+            font-size: 1rem;
+         }
+
+         .about-section .bd-services-2__item-btn {
+            margin-top: 15px;
+         }
+        
       }
+
+      
    </style>
 </head>
 
@@ -369,10 +430,6 @@
                   </button>
                </div>
             </div>
-
-
-
-
             <div class="offcanvas__contact mt-30 mb-20">
 
                <ul>
@@ -464,7 +521,7 @@
          </div>
       </div>
 
-      <div class="bd-about-2__section py-4">
+      <!-- <div class="bd-about-2__section py-4">
          <div class="container">
             <div class="row align-items-center">
                <div class="col-lg-6 mb-4 mb-lg-0" style="width: 90%;">
@@ -472,88 +529,263 @@
                </div>
             </div>
          </div>
-      </div>
-
-
-
-      <!-- about us section end -->
+      </div> -->
 
       <!-- services area start -->
       <div class="bd-services__area pb-5">
          <div class="container">
             <div class="row">
                <div class="col-12">
+                  <div class="bd-section__title-wrapper text-center mb-5 about-section">
+                     <div class="container">
+                        <div class="row align-items-center">
+                           <!-- Image Column -->
+                           <div class="col-12 col-md-6 mb-4 mb-md-0">
+                              <div class="img">
+                                 <img src="https://i.pinimg.com/564x/6f/79/8d/6f798d99ef4b1e488532d63969d7a51f.jpg" alt="About Us Image" class="img-fluid">
+                              </div>
+                           </div>
+                  
+                           <!-- Content Column -->
+                           <div class="col-12 col-md-6">
+                              <div class="content">
+                                 <h2 class="bd-section__title bd-title-border">About Us</h2>
+                                 <p>Good Vibes Branding is India's best restaurant marketing agency, dedicated to delivering excellence in branding and marketing. With 8 years of experience, we have become a trusted partner for restaurants in Mumbai and beyond.</p>
+                                 <p>Our seasoned team enhances brand visibility, engagement, and sales, working closely with global and national brands to foster sustainable growth.</p>
+                                 <p>Let Good Vibes Branding bring good vibes to your brand with our specialized approach to digital marketing for restaurants.</p>
+                                 <div class="bd-services-2__item-btn">
+                                    <a href="about-digital-marketing-solution-mumbai-india.html" class="link-btn-2">
+                                       Read More
+                                       <i class="fas fa-angle-right"></i>
+                                       <i class="fas fa-angle-right"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+
+                  <div class="container my-5">
+                     <div class="row">
+                        <div style="display: flex;justify-content: center;align-items: center;padding: 10px;">
+                           <h1 class="bd-section__title bd-title-border mb-3">Best Restaurant Marketing Solution</h1>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                           <div class="card">
+                              <img src="assets/img/services/performance-1.png" class="card-img-top"
+                                 alt="Digital Advertising">
+                              <div class="card-body">
+                                 <h5 class="card-title">Digital Advertising</h5>
+                                 <p class="card-text">We help you reach local customers effectively through targeted ads
+                                    on Google, Facebook, and other platforms.</p>
+                                 <div class="bd-services-2__item-btn">
+                                    <a href="digital-marketing-services-firm-mumbai-india.html" class="link-btn-2">
+                                       Read More
+                                       <i class="fas fa-angle-right"></i>
+                                       <i class="fas fa-angle-right"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                           <div class="card">
+                              <img src="assets/img/services/socialmedia-2.png" class="card-img-top"
+                                 alt="Social Media for Restaurants">
+                              <div class="card-body">
+                                 <h5 class="card-title">Social Media for Restaurants</h5>
+                                 <p class="card-text">We manage your social media presence, sharing food photos,
+                                    engaging content, and promotions to keep your audience captivated.</p>
+                                 <div class="bd-services-2__item-btn">
+                                    <a href="social-media-service-agency-mumbai-india.html" class="link-btn-2">
+                                       Read More
+                                       <i class="fas fa-angle-right"></i>
+                                       <i class="fas fa-angle-right"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                           <div class="card">
+                              <img src="assets/img/services/website-1.png" class="card-img-top"
+                                 alt="Website Design for Restaurants">
+                              <div class="card-body">
+                                 <h5 class="card-title">Website Design for Restaurants</h5>
+                                 <p class="card-text">We design a custom website for your restaurant that highlights
+                                    your menu and personality, optimized for SEO to drive traffic.</p>
+                                 <div class="bd-services-2__item-btn">
+                                    <a href="website-designing-service-company-mumbai-india.html" class="link-btn-2">
+                                       Read More
+                                       <i class="fas fa-angle-right"></i>
+                                       <i class="fas fa-angle-right"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="col-md-4 mb-4">
+                           <div class="card">
+                              <img src="assets/img/services/seo-1.png" class="card-img-top" alt="SEO for Restaurants">
+                              <div class="card-body">
+                                 <h5 class="card-title">SEO for Restaurants</h5>
+                                 <p class="card-text">We optimize your website to rank high in search engine results,
+                                    improving online visibility and driving more traffic.</p>
+                                 <div class="bd-services-2__item-btn">
+                                    <a href="seo-service-firm-mumbai-india.html" class="link-btn-2">
+                                       Read More
+                                       <i class="fas fa-angle-right"></i>
+                                       <i class="fas fa-angle-right"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="col-md-4 mb-4">
+                           <div class="card">
+                              <img src="assets/img/services/performance-2.png" class="card-img-top"
+                                 alt="Online Reputation Management">
+                              <div class="card-body">
+                                 <h5 class="card-title">Online Reputation Management</h5>
+                                 <p class="card-text">Our review and rating management services ensure your restaurant
+                                    maintains a positive online reputation.</p>
+                                 <div class="bd-services-2__item-btn">
+                                    <a href="" class="link-btn-2">
+                                       Read More
+                                       <i class="fas fa-angle-right"></i>
+                                       <i class="fas fa-angle-right"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+
+                  <div class="bd-services__area pt-120 pb-90">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-12">
+                              <div class="bd-section__title-wrapper text-center mb-90 wow fadeInUp">
+                                 <h1 class="bd-section__title bd-title-border">Why Choose Us for Your Restaurant?</h1>
+                              </div>
+                           </div>
+                        </div>
+                  
+                        <!-- First Row of Services -->
+                        <div class="row">
+                           <div class="col-12 col-md-4 mb-4">
+                              <div class="bd-services-2__item text-center d-flex flex-column h-100 wow fadeInUp">
+                                 <div class="bd-services-2__icon mb-4">
+                                    <img src="assets/img/services/experience.png" alt="Expertise">
+                                 </div>
+                                 <h3 class="bd-services-2__title">Expertise</h3>
+                                 <div class="bd-services-2__content">
+                                    <p>Years of experience in digital marketing for restaurants.</p>
+                                 </div>
+                              </div>
+                           </div>
+                  
+                           <div class="col-12 col-md-4 mb-4">
+                              <div class="bd-services-2__item text-center d-flex flex-column h-100 wow fadeInUp">
+                                 <div class="bd-services-2__icon mb-4">
+                                    <img src="assets/img/services/united.png" alt="Professional Team">
+                                 </div>
+                                 <h3 class="bd-services-2__title">Professional & Enthusiastic Team</h3>
+                                 <div class="bd-services-2__content">
+                                    <p>A skilled, dedicated team with a genuine passion for bringing your vision to life and ensuring your success.</p>
+                                 </div>
+                              </div>
+                           </div>
+                  
+                           <div class="col-12 col-md-4 mb-4">
+                              <div class="bd-services-2__item text-center d-flex flex-column h-100 wow fadeInUp">
+                                 <div class="bd-services-2__icon mb-4">
+                                    <img src="assets/img/services/lightbulb.png" alt="Innovative Ideas">
+                                 </div>
+                                 <h3 class="bd-services-2__title">Innovative Ideas</h3>
+                                 <div class="bd-services-2__content">
+                                    <p>Creative solutions that push boundaries and transform your restaurant’s experience, combining originality with practical impact.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                  
+                        <!-- Second Row of Services -->
+                        <div class="row">
+                           <div class="col-12 col-md-4 mb-4">
+                              <div class="bd-services-2__item text-center d-flex flex-column h-100 wow fadeInUp">
+                                 <div class="bd-services-2__icon mb-4">
+                                    <img src="assets/img/services/idea.png" alt="Tailored Solutions">
+                                 </div>
+                                 <h3 class="bd-services-2__title">Tailored Solutions</h3>
+                                 <div class="bd-services-2__content">
+                                    <p>We create custom digital strategies that reflect the uniqueness of your restaurant and help you stand out online.</p>
+                                 </div>
+                              </div>
+                           </div>
+                  
+                           <div class="col-12 col-md-4 mb-4">
+                              <div class="bd-services-2__item text-center d-flex flex-column h-100 wow fadeInUp">
+                                 <div class="bd-services-2__icon mb-4">
+                                    <img src="assets/img/services/results.png" alt="Proven Results">
+                                 </div>
+                                 <h3 class="bd-services-2__title">Proven Results</h3>
+                                 <div class="bd-services-2__content">
+                                    <p>Our success stories speak for themselves! We’ve helped restaurants boost visibility, draw in new customers, and elevate revenue.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+
+
                   <div class="bd-section__title-wrapper text-center mb-5">
-                     <h3 class="bd-section__title bd-title-border">About Us</h3>
-                     <p>Good Vibes Branding is India's best restaurant marketing agency, dedicated to delivering
-                        excellence in branding and marketing. With 8 years of experience, we have become a trusted
-                        partner for restaurants in Mumbai and beyond.</p>
-                     <p>Our seasoned team enhances brand visibility, engagement, and sales, working closely with global
-                        and national brands to foster sustainable growth.</p>
-                     <p>Let Good Vibes Branding bring good vibes to your brand with our specialized approach to digital
-                        marketing for restaurants.</p>
+                     <div class="container">
+                        <div class="row align-items-center">
+                           <!-- Content Column -->
+                           <div class="col-12 col-md-6 mb-4 mb-md-0">
+                              <div class="content">
+                                 <h3 class="bd-section__title bd-title-border">Customized Marketing Plans for Your Restaurant</h3>
+                                 <p class="mt-3">Enhance your online presence with our expert-designed, Dynamic Digital Marketing Plans. These plans deliver tangible results through personalized strategies, effective social media engagement, and SEO excellence. Increase customer interaction, track progress, and stay ahead of the competition. Unlock your brand’s full potential today and take the first step towards digital success. Let’s build your success story together.</p>
+                                 <div class="bd-services-2__item-btn mt-3">
+                                    <a href="about-digital-marketing-solution-mumbai-india.html" class="link-btn-2">
+                                       Read More
+                                       <i class="fas fa-angle-right"></i>
+                                       <i class="fas fa-angle-right"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                  
+                           <!-- Image Column -->
+                           <div class="col-12 col-md-6">
+                              <div class="img">
+                                 <img src="https://i.pinimg.com/564x/6f/79/8d/6f798d99ef4b1e488532d63969d7a51f.jpg" alt="" class="img-fluid">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
+                  
 
-                  <div class="text-center mb-4">
-                     <img src="assets/img/best-res.png" class="img-fluid">
-                     <h3>Best Restaurant Marketing Solution</h3>
-                  </div>
-
-                  <ul class="list-unstyled">
-                     <li style="color: #A00D93;">Digital Advertising</li>
-                     <p>We help you reach local customers effectively through targeted ads on Google, Facebook, and
-                        other platforms.</p>
-
-                     <li style="color: #A00D93;">Social Media for Restaurants</li>
-                     <p>We manage your social media presence, sharing food photos, engaging content, and promotions to
-                        keep your audience captivated.</p>
-
-                     <li style="color: #A00D93;">Website Design for Restaurants</li>
-                     <p>We design a custom website for your restaurant that highlights your menu and personality,
-                        optimized for SEO to drive traffic.</p>
-
-                     <li style="color: #A00D93;">SEO for Restaurants</li>
-                     <p>We optimize your website to rank high in search engine results, improving online visibility and
-                        driving more traffic.</p>
-
-                     <li style="color: #A00D93;">Online Reputation Management</li>
-                     <p>Our review and rating management services ensure your restaurant maintains a positive online
-                        reputation.</p>
-                  </ul>
-
-                  <div class="text-center my-4">
-                     <img src="assets/img/why_choose-us.png" alt="Why Choose Us" class="img-fluid">
-                  </div>
-
-                  <h3>Why Choose Us for Your Restaurant?</h3>
-                  <ul class="list-unstyled">
-                     <li><span style="color: #A00D93;">1. Expertise:</span> Years of experience in digital marketing for
-                        restaurants.</li>
-                     <li><span style="color: #A00D93;">2. Professional Team:</span> A skilled team passionate about
-                        ensuring your success.</li>
-                     <li><span style="color: #A00D93;">3. Innovative Ideas:</span> Creative solutions that make a
-                        practical impact.</li>
-                     <li><span style="color: #A00D93;">4. Tailored Solutions:</span> We create custom digital strategies
-                        that reflect your restaurant's uniqueness.</li>
-                     <li><span style="color: #A00D93;">5. Proven Results:</span> Success stories of helping restaurants
-                        boost visibility and revenue.</li>
-                  </ul>
-
-                  <div class="text-center my-4">
-                     <img src="assets/img/marketing-plans.png" alt="Marketing Plans" class="img-fluid">
-                  </div>
-
-                  <h3>Customized Marketing Plans for Your Restaurant:</h3>
-                  <p>Enhance your online presence with our personalized digital marketing plans, boosting interaction,
-                     progress tracking, and competition readiness.</p>
-                  <div class="text-center my-4">
-                     <img src="assets/img/clients.png" alt="Our Clients" class="img-fluid">
-                  </div>
                </div>
             </div>
          </div>
       </div>
-      <!-- services area end -->
+
 
       <!-- FAQ section -->
       <section class="faq-section py-3">
@@ -587,7 +819,8 @@
                      </h2>
                      <div id="coll2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                           Digital marketing in real estate can generate interest, tell your story to buyers, and grow a
+                           Digital marketing in real estate can generate interest, tell your story to buyers, and
+                           grow a
                            lead database.
                         </div>
                      </div>
@@ -797,6 +1030,9 @@
 
 
    <!-- JS here -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    <script src="assets/js/vendor/jquery.js"></script>
    <script src="assets/js/vendor/waypoints.js"></script>
    <script src="assets/js/bootstrap-bundle.js"></script>
